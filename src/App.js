@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import PatientInfo from './components/PatientInfo';
+import DiagnosisHistory from './components/DiagnosisHistory';
+import VitalSigns from './components/VitalSigns';
+import DiagnosticList from './components/DiagnosticList';
+import LabResults from './components/LabResults';
+import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Sidebar />
+      <div className="main-content">
+        <Header />
+        <div className="content">
+          <PatientInfo />
+          <DiagnosisHistory />
+          <VitalSigns />
+          <DiagnosticList />
+          <LabResults />
+        </div>
+      </div>
     </div>
   );
 }

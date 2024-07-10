@@ -1,0 +1,174 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f8f9fb;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.patients-list {
+    list-style: none;
+    padding: 0;
+}
+
+.patients-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.patients-list li:hover, .patients-list .active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.patients-list li span {
+    display: block;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav li {
+    cursor: pointer;
+}
+
+.doctor-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.doctor-name {
+    text-align: right;
+}
+
+.doctor-photo img {
+    border-radius: 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.patient-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.patient-info img {
+    border-radius: 50%;
+}
+
+.show-info-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show-info-btn:hover {
+    background-color: #0056b3;
+}
+
+.diagnosis-history, .vital-signs, .diagnostic-list, .lab-results {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vital-signs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vital-sign {
+    text-align: center;
+}
+
+.diagnostic-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.diagnostic-list th, .diagnostic-list td {
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    text-align: left;
+}
+
+.lab-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lab-results li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+
+.lab-results button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lab-results button:hover {
+    background-color: #0056b3;
+}
